@@ -98,30 +98,3 @@ input2Type	getInput2Type(std::string str)
 		return (INF);
 	return (INVALID);
 }
-
-void	convert2Type(std::string str, input2Type type)
-{
-	switch (type) {
-		case CHAR:
-			std::cout << "char: '" << str[0] << "'" << std::endl;
-			break;
-		case INT:
-			std::cout << "int: " <<  std::endl;
-			break;
-		case FLOAT:
-			std::cout << "float: " <<  "f" << std::endl;
-			break;
-		case INFF:
-			std::cout << "float: inff" << std::endl;
-			break;
-		case DOUBLE:
-			std::cout << "double: " << std::endl;
-			break;
-		case INF:
-			std::cout << "double: inf" << std::endl;
-			break;
-		case INVALID:
-			std::cout << "Error: invalid input" << std::endl;
-			break;
-	}
-}

@@ -4,6 +4,16 @@
 
 #include <iostream>
 
+enum input2Type
+{
+	CHAR,
+	INT,
+	FLOAT,
+	DOUBLE,
+	INFF,
+	INF,
+	INVALID
+};
 
 class ScalarConverter
 {
@@ -15,5 +25,7 @@ class ScalarConverter
 	public:
 		static void convert(std::string str);
 };
+
+input2Type	getInput2Type(std::string str);
 
 #endif

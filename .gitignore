@@ -16,6 +16,10 @@
 *.dylib
 *.dll
 
+ex00/app
+ex01/app
+ex02/app
+
 # Fortran module files
 *.mod
 *.smod

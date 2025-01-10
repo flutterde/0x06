@@ -33,8 +33,9 @@ int main(int argc, char **argv) {
 		std::cout << "Error: wrong number of arguments" << std::endl;
 		return 1;
 	}
-
 	std::cout << "Input type: " ;
 	inputType2String(getInput2Type(std::string(argv[1])));
+	ScalarConverter::convert(std::string(argv[1]));
+
 	return 0;
 }

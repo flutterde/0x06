@@ -3,6 +3,7 @@
 #define SCALARCONVERTER_HPP
 
 #include <iostream>
+#include <cstdlib>
 
 enum input2Type
 {
@@ -27,5 +28,6 @@ class ScalarConverter
 };
 
 input2Type	getInput2Type(std::string str);
+void		convert2Type(std::string str, input2Type type);
 
 #endif

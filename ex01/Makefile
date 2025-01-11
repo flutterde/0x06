@@ -1,10 +1,10 @@
 
 NAME=app
 CPP=c++
-CPPFLAGS=-Wall -Wextra -Werror -std=c++98
-SRCS=main.cpp  helpers.cpp ScalarConverter.cpp
+CPPFLAGS=-Wall -Wextra -Werror -std=c++98 -g -fsanitize=address
+SRCS=main.cpp Serialize.cpp 
 
-HEADERS=ScalarConverter.hpp
+HEADERS=Serialize.hpp
 OBJS=$(SRCS:.cpp=.o)
 
 all: $(NAME)

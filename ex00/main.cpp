@@ -1,30 +1,16 @@
-#include "ScalarConverter.hpp"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ochouati <ochouati@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/11 10:00:33 by ochouati          #+#    #+#             */
+/*   Updated: 2025/01/11 10:00:33 by ochouati         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void inputType2String(input2Type type) {
-	switch (type) {
-		case CHAR:
-			std::cout << "char" << std::endl;
-			break;
-		case INT:
-			std::cout << "int" << std::endl;
-			break;
-		case FLOAT:
-			std::cout << "float" << std::endl;
-			break;
-		case DOUBLE:
-			std::cout << "double" << std::endl;
-			break;
-		case INFF:
-			std::cout << "inff" << std::endl;
-			break;
-		case INF:
-			std::cout << "inf" << std::endl;
-			break;
-		case INVALID:
-			std::cout << "invalid" << std::endl;
-			break;
-	}
-}
+#include "ScalarConverter.hpp"
 
 int main(int argc, char **argv) {
 	(void)argv;
@@ -33,9 +19,7 @@ int main(int argc, char **argv) {
 		std::cout << "Error: wrong number of arguments" << std::endl;
 		return 1;
 	}
-	std::cout << "Input type: " ;
-	inputType2String(getInput2Type(std::string(argv[1])));
-	ScalarConverter::convert(std::string(argv[1]));
 
+	ScalarConverter::convert(std::string(argv[1]));
 	return 0;
 }

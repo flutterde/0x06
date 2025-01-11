@@ -6,7 +6,7 @@
 /*   By: ochouati <ochouati@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/11 14:56:04 by ochouati          #+#    #+#             */
-/*   Updated: 2025/01/11 17:36:29 by ochouati         ###   ########.fr       */
+/*   Updated: 2025/01/11 18:35:55 by ochouati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,11 @@ int	main()
 {
 	std::srand(std::time(NULL));
 	Base *aa = generate();
+	if (!aa)
+		return (1);
 	identify(aa);
+	std::cout << " -------------------- " << std::endl;
 	identify(*aa);
+	delete aa;
 	return (0);
 }
